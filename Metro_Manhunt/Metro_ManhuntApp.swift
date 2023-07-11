@@ -11,7 +11,10 @@ import SwiftUI
 struct Metro_ManhuntApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
+            .environmentObject(WebRTCManager())
         }
     }
 }

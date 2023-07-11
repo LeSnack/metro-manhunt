@@ -11,6 +11,10 @@
 		116A595B2A00E38700ABD5BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A595A2A00E38700ABD5BB /* ContentView.swift */; };
 		116A595D2A00E38800ABD5BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A595C2A00E38800ABD5BB /* Assets.xcassets */; };
 		116A59602A00E38800ABD5BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A595F2A00E38800ABD5BB /* Preview Assets.xcassets */; };
+		11E30FA52A5D3E7000910FCF /* WebRTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E30FA42A5D3E7000910FCF /* WebRTCManager.swift */; };
+		11E30FA82A5D3F5F00910FCF /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 11E30FA72A5D3F5F00910FCF /* WebRTC */; };
+		11E30FAB2A5D42AB00910FCF /* WebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 11E30FAA2A5D42AB00910FCF /* WebSocket */; };
+		11E30FAE2A5D445C00910FCF /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 11E30FAD2A5D445C00910FCF /* Starscream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,7 @@
 		116A595A2A00E38700ABD5BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		116A595C2A00E38800ABD5BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116A595F2A00E38800ABD5BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11E30FA42A5D3E7000910FCF /* WebRTCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E30FAB2A5D42AB00910FCF /* WebSocket in Frameworks */,
+				11E30FA82A5D3F5F00910FCF /* WebRTC in Frameworks */,
+				11E30FAE2A5D445C00910FCF /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,7 @@
 				116A595A2A00E38700ABD5BB /* ContentView.swift */,
 				116A595C2A00E38800ABD5BB /* Assets.xcassets */,
 				116A595E2A00E38800ABD5BB /* Preview Content */,
+				11E30FA42A5D3E7000910FCF /* WebRTCManager.swift */,
 			);
 			path = Metro_Manhunt;
 			sourceTree = "<group>";
@@ -83,6 +92,11 @@
 			dependencies = (
 			);
 			name = Metro_Manhunt;
+			packageProductDependencies = (
+				11E30FA72A5D3F5F00910FCF /* WebRTC */,
+				11E30FAA2A5D42AB00910FCF /* WebSocket */,
+				11E30FAD2A5D445C00910FCF /* Starscream */,
+			);
 			productName = Metro_Manhunt;
 			productReference = 116A59552A00E38700ABD5BB /* Metro_Manhunt.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,11 @@
 				Base,
 			);
 			mainGroup = 116A594C2A00E38700ABD5BB;
+			packageReferences = (
+				11E30FA62A5D3F5F00910FCF /* XCRemoteSwiftPackageReference "WebRTC" */,
+				11E30FA92A5D42AB00910FCF /* XCRemoteSwiftPackageReference "websocket-apple" */,
+				11E30FAC2A5D445C00910FCF /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = 116A59562A00E38700ABD5BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				116A595B2A00E38700ABD5BB /* ContentView.swift in Sources */,
+				11E30FA52A5D3E7000910FCF /* WebRTCManager.swift in Sources */,
 				116A59592A00E38700ABD5BB /* Metro_ManhuntApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +357,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11E30FA62A5D3F5F00910FCF /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stasel/WebRTC.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 114.0.0;
+			};
+		};
+		11E30FA92A5D42AB00910FCF /* XCRemoteSwiftPackageReference "websocket-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shareup/websocket-apple.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		11E30FAC2A5D445C00910FCF /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11E30FA72A5D3F5F00910FCF /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11E30FA62A5D3F5F00910FCF /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+		11E30FAA2A5D42AB00910FCF /* WebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11E30FA92A5D42AB00910FCF /* XCRemoteSwiftPackageReference "websocket-apple" */;
+			productName = WebSocket;
+		};
+		11E30FAD2A5D445C00910FCF /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11E30FAC2A5D445C00910FCF /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 116A594D2A00E38700ABD5BB /* Project object */;
 }

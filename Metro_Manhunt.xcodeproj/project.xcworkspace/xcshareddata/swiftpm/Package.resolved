@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "async-extensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shareup/async-extensions.git",
+      "state" : {
+        "revision" : "59504194f84b8c66a27503b5fd0640ac9b01f42a",
+        "version" : "4.1.0"
+      }
+    },
+    {
+      "identity" : "dispatch-timer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shareup/dispatch-timer.git",
+      "state" : {
+        "revision" : "2d8c304aa6f382a7a362cd5a814884f3930c5662",
+        "version" : "3.0.1"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+        "version" : "4.0.4"
+      }
+    },
+    {
+      "identity" : "synchronized",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shareup/synchronized.git",
+      "state" : {
+        "revision" : "85653e23270ec88ae19f8d494157769487e34aed",
+        "version" : "4.0.1"
+      }
+    },
+    {
+      "identity" : "webrtc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stasel/WebRTC.git",
+      "state" : {
+        "revision" : "938564aac1e2e810ffb4931d93cf67e00c5ad679",
+        "version" : "114.0.0"
+      }
+    },
+    {
+      "identity" : "websocket-apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shareup/websocket-apple.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2fa14629e689ac73e76b949b2216a6ae3f5545c5"
+      }
+    }
+  ],
+  "version" : 2
+}
